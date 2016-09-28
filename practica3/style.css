@@ -1,0 +1,76 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #363D3F;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container {
+    width: 100%;
+}
+
+.txt-box {
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    font-size: 1.1em;
+}
+
+.btn-validar {
+    width: 140px;
+    height: 40px;
+    display: block;
+    margin: 30px auto;
+    font-size: 1.1em;
+
+    background-color: #009393;
+    color: white;
+
+    border: none;
+}
+
+.btn-validar:hover {
+    background-color: #005C65;
+}
+
+.validacion {
+    width: 270px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.valida {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+
+.invalida {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.hidden {
+    display: none;
+}

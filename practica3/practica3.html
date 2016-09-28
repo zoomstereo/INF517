@@ -2,9 +2,30 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Practica 3</title>
+
+        <link rel="stylesheet" href="style.css" media="screen" title="no title">
     </head>
     <body>
         <h1>Practica 3</h1>
+        <h2>Validación de cedula</h2>
+
+        <div class="container">
+            <input id="cedula" class="txt-box" type="text" placeholder="Introduzca su cedula">
+            <input class="btn-validar" type="button" value="Validar" onclick="validar()">
+
+            <div id="valida" class="validacion valida hidden">
+                <p>Cedula valida</p>
+            </div>
+
+            <div id="invalida" class="validacion invalida hidden">
+                <p>Cedula Invalida</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="main.js">
+
+        </script>
     </body>
 </html>
