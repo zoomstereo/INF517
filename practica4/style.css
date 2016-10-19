@@ -1,0 +1,50 @@
+* {box-sizing: border-box; margin: 0px; padding: 0px;}
+
+body {
+    background-color: #bdc3c7;
+}
+/* Utility classes */
+
+.disable {
+    display: none;
+}
+
+.menu {
+    width: 95%;
+    margin: 10px auto;
+}
+
+.menu-1 {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 50px 10px;
+}
+
+.menu-2 {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px 0px;
+    border-bottom: 3px solid black;
+}
+
+.menu-3 {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px;
+    border-bottom: 3px solid gray;
+}
