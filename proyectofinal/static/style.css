@@ -1,0 +1,142 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+* {font-family: "Open Sans"; box-sizing: border-box;}
+p {margin: 0;}
+a {text-decoration: none; text-decoration: inherit; color: inherit;}
+
+html {height: 100%;}
+body {height: calc(100% - 50px); background-color: #ecf0f1;}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #f39c12;
+    height: 50px;
+    z-index: 1;
+    top: 0px;
+}
+
+header .logo {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: white;
+    line-height: 50px;
+    margin-left: 12px;
+
+}
+
+header .logo .menu-btn {
+    font-size: 1.4em;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    height: 100%;
+    max-height: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Side nav section */
+.side-nav {
+    position: fixed;
+    background-color: #2c3e50;
+    width: 200px;
+    height: 100%;
+}
+
+.side-nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.1em;
+    color: #bdc3c7;
+}
+
+.side-nav li {
+    padding: 20px;
+    border-bottom: 1px solid #405169;
+}
+
+.side-nav li:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.side-nav .fa {
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+
+.active {
+    background-color: #19242E;
+}
+
+/* Content section */
+.content {
+    height: 100%;
+    width: auto;
+    margin: 50px 0px 0px 200px;
+    padding: 15px;
+}
+
+.content h1 {
+    margin-top: 0px;
+    color: #3B393B;
+}
+
+.targeta .targeta-header {
+    background-color: #3498db;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ecf0f1;
+}
+
+.targeta .title {
+    margin-left: 20px;
+}
+
+.targeta .targeta-body {
+    padding: 20px;
+    background-color: #fff;
+    color: #696969;
+}
+
+@media only screen and (min-width: 600px) {
+    header .logo .menu-btn {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .logo {
+        text-align: center;
+    }
+
+    header .logo .menu-btn {
+        float: left;
+        margin-top: 7px;
+        margin-left: 5px;
+    }
+
+    .side-nav {
+        display: none;
+        /*width: 70%;*/
+    }
+
+    .content {
+        margin-left: 0;
+    }
+}

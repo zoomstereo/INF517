@@ -1,0 +1,8 @@
+Estructura del dato
+Entity: Pelicula
+Atributos:
+-titulo     0
+-genero     1
+-duracion   2
+-fecha      3
+-rating     4

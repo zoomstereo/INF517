@@ -1,0 +1,50 @@
+.new-user {
+    text-align: right;
+    margin-right: 15px;
+}
+
+.new-user a {
+    color: #3498db;
+}
+
+.new-user a:hover {
+    color: blue;
+}
+
+.user {
+    background-color: white;
+    margin: 10px 0px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+}
+
+.user a {
+    color: #3498db;
+    margin-right: 15px;
+}
+
+.user a:hover {
+    color: blue;
+}
+
+/* Nuevo usuario */
+.nuevo-usuario-title {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 800;
+    color: #7f8c8d;
+}
+
+.form-item {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #7f8c8d;
+    font-size: 1.28em;
+}
+
+.form-item input {
+    display: block;
+    margin: 10px 0;
+}
