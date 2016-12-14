@@ -4,8 +4,8 @@ $URI = explode('?', $_SERVER["REQUEST_URI"], 2)[0];
 // Diferent vars for the switch cases, depending on the URI
 $case_admin = '/';
 $case_usuarios = '/usuarios.php';
-$case_usuario_details = '/user-details.php';
-$case_nuevo_usuario = '/nuevo-usuario.php';
+$case_usuario_details = '/edit.php';
+$case_nuevo_usuario = '/new.php';
 
 ?>
 <!DOCTYPE html>
@@ -20,8 +20,9 @@ $case_nuevo_usuario = '/nuevo-usuario.php';
         <link rel="stylesheet" href="static/style.css" media="screen" title="no title">
         <?php
         switch ($URI) {
-            case $case_admin:
-                # Do nothing
+            case $case_admin: ?>
+                <link rel="stylesheet" href="static/details.css" media="screen" title="no title">
+                <?php
                 break;
             case $case_nuevo_usuario:
             case $case_usuario_details:
@@ -47,13 +48,26 @@ $case_nuevo_usuario = '/nuevo-usuario.php';
                 <ul>
                     <?php
                     switch ($URI) {
+                        case $case_usuario_details:
+                            ?>
+                            <a href="/">
+                                <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+                            </a>
+                            <a href="/new.php">
+                                <li><i class="fa fa-plus" aria-hidden="true"></i> Nuevo</li>
+                            </a>
+                            <script src="static/main.js">
+
+                            </script>
+                            <?php
+                            break;
                         case $case_admin:
                             ?>
                             <a href="/">
                                 <li class="active"><i class="fa fa-home" aria-hidden="true"></i> Home</li>
                             </a>
-                            <a href="/usuarios.php">
-                                <li><i class="fa fa-users" aria-hidden="true"></i> Usuarios</li>
+                            <a href="/new.php">
+                                <li><i class="fa fa-plus" aria-hidden="true"></i> Nuevo</li>
                             </a>
                             <script src="static/main.js">
 
@@ -62,14 +76,13 @@ $case_nuevo_usuario = '/nuevo-usuario.php';
                             break;
 
                         case $case_nuevo_usuario:
-                        case $case_usuario_details:
                         case $case_usuarios:
                             ?>
                             <a href="/">
                                 <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
                             </a>
-                            <a href="/usuarios.php">
-                                <li class="active"><i class="fa fa-users" aria-hidden="true"></i> Usuarios</li>
+                            <a href="/new.php">
+                                <li class="active"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo</li>
                             </a>
                             <?php
                             break;
@@ -81,3 +94,8 @@ $case_nuevo_usuario = '/nuevo-usuario.php';
 
             <div class="content">
                 <!-- Here ends the template, here begins the content side  -->
+                <?php
+                    if($URI == $case_admin) {
+                        include 'details.php';
+                    }
+                ?>
